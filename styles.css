@@ -110,11 +110,11 @@ h1 span { color: var(--forest); }
 .completion-pill strong { font-size: .875rem; }
 .completion-pill small { color: var(--muted); font-size: .875rem; }
 
-.progress-track { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); margin: 36px 0 29px; }
-.progress-line { position: absolute; top: 14px; right: 12.5%; left: 12.5%; height: 2px; background: var(--forest); }
-.progress-step { position: relative; display: flex; align-items: center; gap: 10px; color: var(--muted); }
-.step-number { width: 29px; height: 29px; z-index: 1; display: grid; flex: 0 0 29px; place-items: center; border: 1px solid #C9C4BA; background: var(--canvas); color: var(--body); font-family: var(--mono); font-size: .875rem; font-weight: 700; }
-.step-title { font-size: .875rem; font-weight: 600; line-height: 1.5; }
+.progress-track { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); margin: 42px 0 34px; }
+.progress-line { position: absolute; top: 16px; right: 12.5%; left: 12.5%; height: 1px; background: #C9D5CC; }
+.progress-step { position: relative; min-height: 78px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; color: var(--muted); }
+.step-number { width: 34px; height: 34px; z-index: 1; display: grid; flex: 0 0 34px; place-items: center; border: 1px solid #C9C4BA; background: var(--canvas); color: var(--body); font-family: var(--mono); font-size: .875rem; font-weight: 700; }
+.step-title { max-width: 210px; font-size: .875rem; font-weight: 600; line-height: 1.55; }
 .progress-step.is-current .step-number, .progress-step.is-complete .step-number { border-color: var(--forest); background: var(--forest); color: var(--paper); }
 .progress-step.is-current .step-title, .progress-step.is-complete .step-title { color: var(--ink); }
 
@@ -249,8 +249,8 @@ code { font-family: var(--mono); font-size: .94em; }
   .section-heading h2, .repo-heading h2 { font-size: 1.75rem; }
   .section-heading { flex-wrap: wrap; }
   .completion-pill { min-width: auto; }
-  .progress-track { margin-top: 26px; }
-  .progress-line { top: 12px; right: 11%; left: 11%; }
+  .progress-track { min-height: 110px; margin-top: 30px; }
+  .progress-line { top: 14px; right: 11%; left: 11%; }
   .progress-step { flex-direction: column; align-items: center; gap: 6px; text-align: center; }
   .step-number { width: 27px; height: 27px; flex-basis: 27px; font-size: .875rem; }
   .step-title { max-width: 96px; font-size: .8125rem; }
